@@ -1,4 +1,5 @@
 require('rspec')
+require('./lib/myhash.rb')
 
 describe(MyHash) do
   describe("#myFetch") do

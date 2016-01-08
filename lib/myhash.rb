@@ -1,8 +1,7 @@
 class MyHash
 
-  define_method(:initialize) do |key, value|
-    @key = key
-    @value = value
+  define_method(:initialize) do
+
   end
 
   define_method(:myFetch) do |key|
