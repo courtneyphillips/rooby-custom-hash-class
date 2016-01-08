@@ -2,6 +2,12 @@ require('rspec')
 require('./lib/myhash.rb')
 
 describe(MyHash) do
+  describe("#length") do
+    it("returns 0 if a MyHash object is empty") do
+      test_hash = MyHash.new()
+      expect(test_hash.length).to(eq(0))
+    end
+  end
   describe("#myStore") do
     it("stores a key and corresponding value") do
       test_hash = MyHash.new()
