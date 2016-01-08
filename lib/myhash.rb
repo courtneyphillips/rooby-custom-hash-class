@@ -24,6 +24,13 @@ class MyHash
   end
 
   define_method(:has_key?) do |key|
+    result = false
+    @hash.each do |entry|
+      if entry.include?(key)
+        result = true
+      end
+    end
+    result
   end
 
 

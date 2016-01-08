@@ -39,7 +39,7 @@ describe(MyHash) do
   describe("#has_key?") do
     it("will return false if the given key is not present in the MyHash object") do
       test_hash = MyHash.new()
-      test_hash.store("kitten", "cute")
+      test_hash.myStore("kitten", "cute")
       expect(test_hash.has_key?("puppy")).to(eq(false))
     end
   end
