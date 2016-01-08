@@ -18,10 +18,8 @@ class MyHash
     @hash.each do |entry|
       if entry.include?(key)
         returned_value = entry[1]
-      else
-        returned_value = "not available"
       end
     end
-    returned_value
+    returned_value || "Value not present"
   end
 end
