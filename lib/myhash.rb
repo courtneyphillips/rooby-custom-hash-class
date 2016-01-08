@@ -5,4 +5,8 @@ class MyHash
     @value = value
   end
 
+  define_method(:myFetch) do |key|
+
+  end
+
 end

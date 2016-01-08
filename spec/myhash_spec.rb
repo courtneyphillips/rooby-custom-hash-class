@@ -1,3 +1,5 @@
+require('rspec')
+
 describe(MyHash) do
   describe("#myFetch") do
     it("retrieves a stored value by its key") do
