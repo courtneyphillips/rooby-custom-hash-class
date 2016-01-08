@@ -29,4 +29,11 @@ describe(MyHash) do
       expect(test_hash.myFetch("kitten")).to(eq("cute"))
     end
   end
+  describe("#myFetch") do
+    it("returns an error message if the key used isn't present in the MyHash object") do
+      test_hash = MyHash.new()
+      test_hash.myStore("kitten", "cute")
+      expect(test_hash.myFetch("puppy")).to(eq("Value not present"))
+    end
+  end
 end
