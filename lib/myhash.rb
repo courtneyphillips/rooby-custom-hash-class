@@ -22,4 +22,9 @@ class MyHash
     end
     returned_value || "Value not present"
   end
+
+  define_method(:has_key?) do |key|
+  end
+
+
 end
