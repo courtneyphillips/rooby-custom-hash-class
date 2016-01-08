@@ -5,6 +5,10 @@ class MyHash
     @hash = []
   end
 
+  define_method(:length) do
+    @hash.length
+  end
+
   define_method(:myStore) do |key, value|
     @hash.push([key, value])
   end

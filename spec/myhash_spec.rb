@@ -12,7 +12,7 @@ describe(MyHash) do
     it("stores a key and corresponding value") do
       test_hash = MyHash.new()
       test_hash.myStore("kitten", "cute")
-      expect(test_hash.length).to(eq(["kitten", "cute"]))
+      expect(test_hash.length).to(eq(1))
     end
   end
   describe("#myFetch") do
